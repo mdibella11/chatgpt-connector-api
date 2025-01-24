@@ -1,6 +1,7 @@
-# Chatbot API
 
-A robust Chatbot API powered by OpenAI's ChatGPT. 
+# ChatGPT Connector API
+
+A robust Chatbot API powered by OpenAI's ChatGPT.
 
 ## Features
 
@@ -21,29 +22,26 @@ A robust Chatbot API powered by OpenAI's ChatGPT.
    ```
 
 3. Create a `.env` file based on `.env.example` and fill in your OpenAI API key and valid API keys.
-
 4. Run the API:
 
    ```bash
    uvicorn app.main:app --host 0.0.0.0 --port 8000
    ```
 
-## Docker
-
-To run the API in a Docker container:
-
-1. Build the image:
+5. Optionally, use Docker:
 
    ```bash
-   docker build -t chatbot-api .
+   docker build -t chatgpt-connector-api .
+   docker run -p 8000:8000 chatgpt-connector-api
    ```
 
-2. Run the container:
+## Environment Variables
 
-   ```bash
-   docker run -p 8000:8000 --env-file .env chatbot-api
-   ```
+The following variables need to be set in a `.env` file:
 
-## Author
+- `OPENAI_API_KEY`: Your OpenAI API key.
+- `VALID_API_KEYS`: Comma-separated list of valid API keys for authentication.
 
-Marco Di Bella
+## License
+
+This project is licensed under the MIT License.
