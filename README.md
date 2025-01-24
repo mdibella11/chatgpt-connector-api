@@ -1,7 +1,7 @@
 
 # ChatGPT Connector API
 
-A robust Chatbot API powered by OpenAI's ChatGPT.
+A robust Chatbot API powered by OpenAI's ChatGPT. This project was created and maintained by Marco Di Bella.
 
 ## Features
 
